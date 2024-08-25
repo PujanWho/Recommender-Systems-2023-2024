@@ -27,7 +27,8 @@ The dataset used in this project is the MovieLens 100k dataset, accessed through
 
 #### Technique
 - **Approach:** Collaborative filtering enhanced with deep learning techniques.
-- **Algorithm:** Stochastic Gradient Descent (SGD) with the Adam optimizer.
+- **Algorithm:** [Stochastic Gradient Descent (SGD) with the Adam optimizer.](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
+![SGD with Adam optimizer](Comparison-of-Adam-to-Other-Optimization-Algorithms-Training-a-Multilayer-Perceptron.webp)</br>
 - **Justification for SGD with Adam:**
   - **SGD:** More computationally efficient for the size of the dataset and scalable for larger datasets.
   - **Adam Optimizer:** Robust against noisy data and sparse gradients. Adaptive learning rates help avoid local minima, and it reduces sensitivity to hyperparameters, making it ideal for neural networks.
@@ -37,8 +38,10 @@ The dataset used in this project is the MovieLens 100k dataset, accessed through
 
 ### Evaluation
 - **RS1:**
-  - **RMSE:** Indicates accuracy in rating predictions.
-  - **NDCG:** Measures ranking quality, focusing on the relevance of top recommendations to the user.
+  - **[RMSE:](https://c3.ai/glossary/data-science/root-mean-square-error-rmse/):** Indicates accuracy in rating predictions.
+  ![RMSE](RMSE.png)</br>
+  - **[NDCG:](https://kyle-dufrane.medium.com/normalized-discounted-cumulative-gain-what-it-does-and-how-it-works-b45c0f6624ec)** Measures ranking quality, focusing on the relevance of top recommendations to the user.
+  ![NDCG](NDCG.webp)</br>
 - **RS2:**
   - **RMSE and NDCG:** Adjusted for deep learning. While RS1 might show better RMSE, RS2 potentially generalizes better, reducing overfitting.
   - **Novelty:** Provides a balance between popular and less-known recommendations, offering diversity.
